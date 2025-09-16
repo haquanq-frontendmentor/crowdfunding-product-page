@@ -6,6 +6,7 @@
     outline-offset: -1px;
     text-align: center;
     box-shadow: var(--shadow-border);
+    position: relative;
 
     @media (--tablet) {
         padding-block: 3.625rem 3rem;

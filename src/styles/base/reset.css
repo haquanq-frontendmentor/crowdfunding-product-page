@@ -67,10 +67,6 @@ ul {
     padding: 0;
 }
 
-[hidden] {
-    display: none !important;
-}
-
 @supports selector(:focus-visible) {
     a:focus,
     input:focus,

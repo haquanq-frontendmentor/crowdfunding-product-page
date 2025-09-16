@@ -43,7 +43,7 @@
 
             &--divider {
                 height: 4rem;
-                width: 1px;
+                width: 0.0625rem;
                 margin-inline-end: 2.9375rem;
             }
         }
@@ -51,7 +51,7 @@
         &--divider {
             display: block;
             width: 5rem;
-            height: 1px;
+            height: 0.0625rem;
             background-color: var(--color-gray-300);
             margin-inline: auto;
             margin-block-end: 1.75rem;

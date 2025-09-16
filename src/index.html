@@ -15,7 +15,13 @@
         <a class="nav__home-link" href="" aria-label="Homepage" aria-current="page">
           <img class="nav__logo" src="./assets/images/logo.svg" alt="" />
         </a>
-        <button class="nav__menu-btn" aria-label="Mobile menu" aria-controls="mobile-menu" aria-expanded="false">
+        <button
+          class="nav__menu-btn"
+          type="button"
+          aria-label="Mobile menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
           <span class="nav__menu-btn--line"></span>
           <span class="nav__menu-btn--line"></span>
           <span class="nav__menu-btn--line"></span>
@@ -99,7 +105,7 @@
           <ul class="pledge-intro__list">
             <template>
               <li class="pledge-intro__item">
-                <h3 class="pledge-intro__item-title heading-3" id="reward-title-1">
+                <h3 class="pledge-intro__item-title heading-3">
                   <span class="pledge-intro__item-title--main"></span>
                   <span class="pledge-intro__item-title--sub"></span>
                 </h3>
@@ -108,13 +114,7 @@
                   <p class="pledge-intro__stock">
                     <span class="pledge-intro__stock--count"></span><span class="pledge-intro__stock--text">left</span>
                   </p>
-                  <button
-                    class="pledge-intro__select-btn btn btn--primary"
-                    type="button"
-                    aria-describedby="reward-title-1"
-                  >
-                    Select Reward
-                  </button>
+                  <button class="pledge-intro__select-btn btn btn--primary" type="button">Select Reward</button>
                 </div>
               </li>
             </template>
