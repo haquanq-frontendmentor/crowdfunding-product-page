@@ -1,0 +1,76 @@
+@import "./base/fonts.css";
+@import "./base/variables.css";
+@import "./base/reset.css";
+
+@import "./layouts/container.css";
+
+@import "./components/button.css";
+@import "./components/nav.css";
+@import "./components/header.css";
+@import "./components/intro.css";
+@import "./components/summary.css";
+@import "./components/pledge-intro.css";
+@import "./components/pledge-modal.css";
+@import "./components/success-modal.css";
+@import "./components/pledge-options.css";
+
+@import "./utils/a11y.css";
+
+.heading-1 {
+    font-size: var(--text-md-2);
+    line-height: var(--leading-md);
+}
+
+.heading-2 {
+    font-size: var(--text-md);
+    line-height: var(--leading-sm-3);
+}
+
+.heading-3 {
+    font-size: var(--text-sm);
+    line-height: var(--leading-sm);
+}
+
+.paragraph {
+    font-size: var(--text-sm);
+    line-height: var(--leading-md);
+}
+
+.main {
+    padding-block-end: 4.75rem;
+
+    @media (--tablet) {
+        padding-block-end: 7.75rem;
+    }
+
+    &__container {
+        display: grid;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    :root {
+        --layout-px: 3rem; /* 24 - 48 */
+    }
+
+    .heading-1 {
+        font-size: var(--text-lg);
+        line-height: var(--leading-md-3);
+    }
+
+    .heading-2 {
+        font-size: var(--text-md-2);
+        line-height: var(--leading-md);
+    }
+
+    .heading-3 {
+        font-size: var(--text-md);
+        line-height: var(--leading-sm-3);
+    }
+
+    .paragraph {
+        font-size: var(--text-base);
+        line-height: var(--leading-md-4);
+    }
+}

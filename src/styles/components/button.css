@@ -1,0 +1,22 @@
+.btn {
+    font-weight: var(--font-medium);
+    border-radius: var(--rounded-full);
+    transition-property: background-color, color, transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
+
+    &--primary {
+        background-color: var(--color-cyan-500);
+        color: var(--color-white);
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--color-cyan-700);
+        }
+    }
+}

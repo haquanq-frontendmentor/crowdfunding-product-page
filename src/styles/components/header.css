@@ -1,0 +1,30 @@
+.header {
+    margin: 0 auto;
+
+    &__picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 18.75rem;
+
+        @media (--tablet) {
+            height: 25rem;
+        }
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            inset: 0;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0%) 50%, rgba(0, 0, 0, 70%) 100%);
+        }
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

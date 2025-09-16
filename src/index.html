@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Frontend Mentor | Crowdfunding product page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__home-link" href="" aria-label="Homepage" aria-current="page">
+          <img class="nav__logo" src="./assets/images/logo.svg" alt="" />
+        </a>
+        <button class="nav__menu-btn" aria-label="Mobile menu" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="nav__menu-btn--line"></span>
+          <span class="nav__menu-btn--line"></span>
+          <span class="nav__menu-btn--line"></span>
+        </button>
+        <div class="nav__menu">
+          <ul class="nav__list" id="mobile-menu">
+            <li class="nav__item"><a class="nav__link" href="">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Discover</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Get Started</a></li>
+          </ul>
+        </div>
+      </nav>
+      <picture class="header__picture">
+        <source srcset="./assets/images/image-hero-desktop.jpg" media="(min-wdith: 48em)" />
+        <img src="./assets/images/image-hero-desktop.jpg" alt="" />
+      </picture>
+    </header>
+
+    <main class="main">
+      <div class="main__container container">
+        <div class="intro">
+          <img class="intro__logo" src="./assets/images/logo-mastercraft.svg" alt="" />
+          <h1 class="intro__title heading-1">Mastercraft Bamboo Monitor Riser</h1>
+          <p class="intro__description paragraph">
+            A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+          </p>
+          <div class="intro__action">
+            <button class="intro__pledge-btn btn btn--primary" type="button">Back this project</button>
+            <button class="intro__bookmark-btn" type="button">
+              <svg aria-hidden="true" focusable="false" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
+                  <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+                </g>
+              </svg>
+              <span class="intro__bookmark-btn--text">Bookmark</span>
+            </button>
+          </div>
+        </div>
+        <section class="summary">
+          <h2 class="sr-only">Project progress</h2>
+          <ul class="summary__list">
+            <li class="summary__item">
+              <div>
+                <strong class="summary__stat">$89,914</strong>
+                <p class="summary__description">of $100,000 backed</p>
+              </div>
+            </li>
+            <li class="summary__item">
+              <span class="summary__item--divider"></span>
+              <div>
+                <strong class="summary__stat">5,007</strong>
+                <p class="summary__description">total backers</p>
+              </div>
+            </li>
+            <li class="summary__item">
+              <span class="summary__item--divider"></span>
+              <div>
+                <strong class="summary__stat">56</strong>
+                <p class="summary__description">days left</p>
+              </div>
+            </li>
+          </ul>
+          <div class="summary__bar">
+            <div class="summary__bar--value"></div>
+          </div>
+        </section>
+        <section class="pledge-intro">
+          <h2 class="pledge-intro__title heading-2">About this project</h2>
+          <p class="pledge-intro__description paragraph">
+            <span>
+              The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more
+              comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture
+              and make you more comfortable while at work, helping you stay focused on the task at hand.
+            </span>
+            <span>
+              Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to
+              allow notepads, pens, and USB sticks to be stored under the stand.
+            </span>
+          </p>
+          <ul class="pledge-intro__list">
+            <template>
+              <li class="pledge-intro__item">
+                <h3 class="pledge-intro__item-title heading-3" id="reward-title-1">
+                  <span class="pledge-intro__item-title--main"></span>
+                  <span class="pledge-intro__item-title--sub"></span>
+                </h3>
+                <p class="pledge-intro__item-description paragraph"></p>
+                <div class="pledge-intro__action">
+                  <p class="pledge-intro__stock">
+                    <span class="pledge-intro__stock--count"></span><span class="pledge-intro__stock--text">left</span>
+                  </p>
+                  <button
+                    class="pledge-intro__select-btn btn btn--primary"
+                    type="button"
+                    aria-describedby="reward-title-1"
+                  >
+                    Select Reward
+                  </button>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <div class="pledge-modal" role="dialog" aria-modal="true" aria-labelledby="pledge-modal-label" data-open="false">
+      <section class="pledge-modal__content">
+        <h2 class="pledge-modal__title" id="pledge-modal-label">Back this project</h2>
+        <p class="pledge-modal__description paragraph">
+          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
+        </p>
+        <form class="pledge-form" novalidate>
+          <fieldset class="pledge-options">
+            <legend class="sr-only">Choose any pledge you want</legend>
+            <ul class="pledge-options__list">
+              <template>
+                <li class="pledge-options__item">
+                  <div class="pledge-options__content">
+                    <label class="pledge-options__radio">
+                      <input class="pledge-options__radio-input" type="radio" />
+                      <span class="pledge-options__radio-circle"></span>
+                      <span class="pledge-options__label">
+                        <span class="pledge-options__label--main">Bamboo Stand</span>
+                        <span class="pledge-options__label--sub">Pledge $25 or more</span>
+                      </span>
+                    </label>
+                    <p class="pledge-options__description">
+                      You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional
+                      campaign, and you’ll be added to a special Backer member list.
+                    </p>
+                    <p class="pledge-options__stock">
+                      <strong class="pledge-options__stock--count">101</strong>
+                      <span class="pledge-options__stock--text">left</span>
+                    </p>
+                  </div>
+                  <div class="pledge-options__action" hidden>
+                    <div class="pledge-options__action--inner">
+                      <div class="pledge-options__input-label">
+                        <label class="pledge-options__input-label--main">Enter your pledge</label>
+                        <span class="pledge-options__input-label--hint"></span>
+                      </div>
+                      <div class="pledge-options__field">
+                        <div class="pledge-options__input-wrapper">
+                          <input
+                            class="pledge-options__input"
+                            type="text"
+                            inputmode="numeric"
+                            aria-invalid="false"
+                            required
+                            disabled
+                          />
+                          <span class="pledge-options__input-overlay"></span>
+                          <span class="pledge-options__input-adornment">&dollar;</span>
+                        </div>
+                        <button class="pledge-options__submit-btn btn btn--primary" type="submit">Continue</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </template>
+            </ul>
+          </fieldset>
+        </form>
+        <button class="pledge-modal__close-btn" type="button" aria-label="Close modal">
+          <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+              fill="currentColor"
+              fill-rule="evenodd"
+              opacity=".4"
+            />
+          </svg>
+        </button>
+      </section>
+    </div>
+
+    <div class="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-modal-label" data-open="false">
+      <section class="success-modal__container">
+        <img class="success-modal__icon" src="./assets/images/icon-check.svg" alt="" />
+        <h2 class="success-modal__title" id="success-modal-label">Thanks for your support</h2>
+        <p class="success-modal__description paragraph">
+          Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an
+          email once our campaign is completed.
+        </p>
+        <button class="success-modal__close-btn btn btn--primary" type="button" aria-label="Dismiss">Got it!</button>
+      </section>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

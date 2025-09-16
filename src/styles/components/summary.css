@@ -1,0 +1,98 @@
+.summary {
+    background-color: var(--color-white);
+    border-radius: var(--rounded-base);
+    padding-inline: var(--layout-px);
+    padding-block: 2.25rem 2.5rem;
+    width: 100%;
+    box-shadow: inset 0 0 0 1px var(--color-gray-200);
+
+    @media (--tablet) {
+        padding-block: 3rem 3.0625rem;
+    }
+
+    &__list {
+        text-align: center;
+        margin-block-end: 0.75rem;
+
+        @media (--tablet) {
+            display: flex;
+            text-align: start;
+            margin-block-end: 2.375rem;
+        }
+    }
+
+    &__item {
+        padding-block-end: 1.625rem;
+
+        @media (--tablet) {
+            padding: 0;
+            display: flex;
+            width: 100%;
+
+            & > div {
+                padding-block-start: 0.25rem;
+            }
+
+            &:last-child {
+                max-width: 14.1875rem;
+            }
+
+            &:first-child {
+                max-width: 11.1875rem;
+            }
+
+            &--divider {
+                height: 4rem;
+                width: 1px;
+                margin-inline-end: 2.9375rem;
+            }
+        }
+
+        &--divider {
+            display: block;
+            width: 5rem;
+            height: 1px;
+            background-color: var(--color-gray-300);
+            margin-inline: auto;
+            margin-block-end: 1.75rem;
+
+            @media (--tablet) {
+                margin-block: 0;
+                margin-inline: 0 2.9375rem;
+            }
+        }
+    }
+
+    &__stat {
+        display: block;
+        color: var(--color-black);
+        font-size: var(--text-lg-2);
+        margin-block-end: 0.875rem;
+
+        @media (--tablet) {
+            margin-block-end: 0.875rem;
+        }
+    }
+
+    &__description {
+        font-size: var(--text-sm);
+
+        @media (--tablet) {
+            font-size: var(--text-sm-2);
+        }
+    }
+
+    &__bar {
+        height: 0.75rem;
+        width: 100%;
+        border-radius: var(--rounded-full);
+        background-color: var(--color-gray-200);
+
+        &--value {
+            width: calc(49600% / 634);
+            height: 100%;
+            background-color: var(--color-cyan-500);
+            border-radius: var(--rounded-full);
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.container {
+    margin: 0 auto;
+    width: min(100vw - 3rem, var(--layout-max-w));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

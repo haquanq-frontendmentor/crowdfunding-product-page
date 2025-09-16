@@ -1,0 +1,129 @@
+.pledge-intro {
+    border-radius: var(--rounded-base);
+    background-color: var(--color-white);
+    padding-block: 2.5rem;
+    padding-inline: var(--layout-px);
+    box-shadow: var(--shadow-border);
+
+    @media (--tablet) {
+        padding: 3rem;
+    }
+
+    &__title {
+        color: var(--color-black);
+        margin-block-end: 1.5rem;
+
+        @media (--tablet) {
+            margin-block-end: 2.1875rem;
+        }
+    }
+
+    &__description {
+        margin-block-end: 2.1875rem;
+        display: grid;
+        gap: 1.5rem;
+
+        @media (--tablet) {
+            margin-block-end: 2.5rem;
+            gap: 1.875rem;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    &__item {
+        padding: 1.5rem;
+        border-radius: var(--rounded-base);
+        box-shadow: var(--shadow-border);
+
+        @media (--tablet) {
+            padding-block: 2.375rem 2rem;
+            padding-inline: 2rem;
+        }
+
+        &[out-stock] {
+            opacity: 0.5;
+            pointer-events: none;
+
+            button {
+                background-color: var(--color-gray-500);
+            }
+        }
+    }
+
+    &__item-title {
+        margin-block-end: 1.5rem;
+
+        @media (--tablet) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--main {
+                margin: 0;
+            }
+        }
+
+        &--main {
+            display: block;
+            margin-block-end: 0.5rem;
+            color: var(--color-black);
+        }
+
+        &--sub {
+            font-weight: var(--font-medium);
+            color: var(--color-cyan-500);
+            font-size: var(--text-sm-2);
+        }
+    }
+
+    &__item-description {
+        margin-block-end: 1.75rem;
+
+        @media (--tablet) {
+            margin-block-end: 1.5rem;
+        }
+    }
+
+    &__select-btn {
+        padding-block: 1rem 1.125rem;
+        font-size: var(--text-sm);
+        width: 9.8125rem;
+    }
+
+    &__stock {
+        display: flex;
+        align-items: center;
+        margin-block-end: 1.75rem;
+
+        @media (--tablet) {
+            margin: 0;
+        }
+
+        &--count {
+            font-size: var(--text-lg-2);
+            font-weight: var(--font-bold);
+            color: var(--color-black);
+        }
+
+        &--text {
+            font-size: var(--text-sm-2);
+            margin-block-start: 0.0625rem;
+            margin-inline-start: 0.5rem;
+        }
+    }
+
+    &__action {
+        display: initial;
+
+        @media (--tablet) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
