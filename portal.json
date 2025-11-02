@@ -1,0 +1,15 @@
+{
+  "name": "Crowdfunding Product Page",
+  "featured": false,
+  "colors:": {
+    "brand": "#3CB4AB"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/crowdfunding-product-page/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "junior",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/responsive-crowdfunding-product-page-w-html---css---js-YAZO6t5gId"
+  }
+}
